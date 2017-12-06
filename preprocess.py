@@ -68,15 +68,31 @@ if __name__ == '__main__':
 	prefix2 = 'googlebooks-eng-all-2gram-20120701-'
 
 	data = {
-		'knowledge represent': prefix2+'kn.gz',
-		'distribut system': prefix2+'di.gz',
-		'internet protocol': prefix2+'in.gz',
+		'amplitude modulat': prefix2+'am.gz',	# amplitude modulation
+		'amber alert': prefix2+'am.gz',
+		'baby boom': prefix2+'ba.gz',
+		'barack obama': prefix2+'ba.gz',
+		'biochemic weapon': prefix2+'bi.gz',	# biochemical weapon
+		'bitcoin mining': prefix2+'bi.gz',
+		'college educat': prefix2+'co.gz',		# college education
+		'communis party': prefix2+'co.gz',		# communist party
+		'data compression': prefix2+'da.gz',
+		'data mining': prefix2+'da.gz',
+		'data science': prefix2+'da.gz',
+		'distribut system': prefix2+'di.gz',	# distributed system
+		'electronic book': prefix2+'el.gz',
+		'electronic music': prefix2+'el.gz',
+		'feminis movement': prefix2+'fe.gz',	# feminist movement
+		'heavy metal': prefix2+'he.gz',
+		'hello world': prefix2+'he.gz',
+		'hillary clinton': prefix2+'hi.gz',
 		'information theory': prefix2+'in.gz',
-		'amplitude modulat': prefix2+'am.gz',
-		'quantum comput': prefix2+'qu.gz',
-		'biochemic weapon': prefix2+'bi.gz',
-		'nuclear fusion': prefix2+'nu.gz',
-		'feminis campaign': prefix2+'fe.gz'
+		'integrat circuit': prefix2+'in.gz',	# integrated circuit
+		'internet protocol': prefix2+'in.gz',
+		'knowledge represent': prefix2+'kn.gz',	# knowledge representation
+		'nuclear weapon': prefix2+'nu.gz',
+		'quantum comput': prefix2+'qu.gz',		# quantum computing
+		'question answer': prefix2+'qu.gz'	 	# question answering
 	}
 
 	output = open(output_file, 'w')
