@@ -2,7 +2,6 @@ import os
 import io
 from nltk import pos_tag
 from nltk import word_tokenize
-from nltk.stem.wordnet import WordNetLemmatizer
 
 dir_path = os.path.split(os.path.realpath(__file__))[0]
 
@@ -52,7 +51,7 @@ def get_list():
 		wordlist = file.readlines()
 
 	wordlist = [i.replace('\n', '') for i in wordlist]
-
+	#print(len(wordlist))
 	final_list = []
 	for name in wordlist:
 		final_list += preprocess(name)
@@ -62,6 +61,7 @@ def get_list():
 		output.write(str(i))
 
 	output.close()
+	#print(len(final_list))
 	return final_list
 
 if __name__ == "__main__":
