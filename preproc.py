@@ -44,11 +44,10 @@ def preprocess(word):
 		new_line = i.replace('\n', '').split()
 		word_list.append(new_line)
 	
-	word_list_new = [[word, tag_list, i[-3], i[-2], i[-1]] for i in word_list]
+	word_list_new = [[word, tag_list, int(i[-3]), int(i[-2]), int(i[-1])] for i in word_list]
 	return word_list_new
 
-if __name__ == "__main__":
-	# get the word list
+def get_list():
 	with io.open('wordlist.txt', 'r') as file:
 		wordlist = file.readlines()
 
@@ -63,3 +62,7 @@ if __name__ == "__main__":
 		output.write(str(i))
 
 	output.close()
+	return final_list
+
+if __name__ == "__main__":
+	get_list()
