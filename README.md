@@ -8,7 +8,14 @@ The project uses data from the Google Books N-Gram Dataset ([link](http://storag
 
 ## Setup
 - Use Vagrant to start a VM
-- Run [spark_notebook.py](https://github.com/kaychenziqi/google-book-ngram-analysis/blob/master/spark_notebook.py)
+```
+$ vagrant up
+$ vagrant ssh
+```
+- Start Spark server
+```
+$ ./spark_notebook.py
+```
 
 ## Results
 [popularity.ipynb](https://github.com/kaychenziqi/google-book-ngram-analysis/blob/master/popularity.ipynb) - Visualizes changes in frequencies/popularity of each topic word
